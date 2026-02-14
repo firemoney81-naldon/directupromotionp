@@ -69,315 +69,859 @@
 
 
 
-  <style>
-        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; line-height: 1.8; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        h1 { font-size: 32px; color: #007bff; border-bottom: 3px solid #007bff; padding-bottom: 10px; margin-top: 30px; text-align: center; font-weight: bold; }
-        h2 { font-size: 26px; color: #0056b3; border-left: 5px solid #007bff; padding-left: 15px; margin-top: 35px; margin-bottom: 20px; background-color: #eaf4ff; padding-top: 10px; padding-bottom: 10px; }
-        h3 { font-size: 20px; color: #0056b3; margin-top: 25px; margin-bottom: 15px; font-weight: bold; }
-        h4 { font-size: 18px; color: #0056b3; margin-top: 15px; margin-bottom: 10px; }
-        p, ul, table { font-size: 16px; margin-bottom: 15px; }
-        a { color: #dc3545; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: middle; }
-        th { background-color: #f0f8ff; color: #0056b3; font-weight: bold; }
-        strong { font-weight: bold; color: #007bff; }
-        .intro-box { background-color: #fff; border: 2px solid #007bff; padding: 20px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        .tip-box { background-color: #f0fff0; border-left: 5px solid #28a745; padding: 15px; margin-top: 20px; margin-bottom: 20px; font-size: 15px; }
-        .warning-box { background-color: #fff0f0; border-left: 5px solid #dc3545; padding: 15px; margin-top: 20px; margin-bottom: 20px; font-size: 15px; }
-        .cta-button { display: inline-block; background-color: #28a745; color: white; padding: 12px 25px; border-radius: 5px; text-align: center; font-weight: bold; margin-top: 20px; }
-        .interactive-section { background-color: #ffffff; padding: 30px; border-radius: 10px; border: 1px solid #e0e0e0; margin-top: 30px; }
-        .interactive-section label { display: block; margin-bottom: 8px; font-weight: bold; color: #0056b3; }
-        .interactive-section input, .interactive-section select { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
-        .interactive-section button { background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease; }
-        .interactive-section button:hover { background-color: #0056b3; }
-        .graph-image { width: 100%; height: auto; margin: 20px 0; }
-        blockquote { border-left: 4px solid #007bff; background-color: #eaf4ff; padding: 15px 20px; margin: 20px 0; }
-        .anchor-nav { background-color: #fff; padding: 15px; border-radius: 8px; border: 1px solid #e0e0e0; margin-bottom: 20px; }
-        .anchor-nav a { display: block; padding: 5px 0; font-size: 15px; color: #0056b3; }
-    </style>
-    <!-- JSON-LD Structured Data for Naver Snippet -->
+
+
+    <!-- JSON-LD Structured Data for SEO -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://yourwebsite.com/used-car-insurance-guide-2026"
-      },
-      "headline": "중고차보험료, 2026년 최신 가이드: 저렴하게 가입하고 혜택 극대화하는 비결",
-      "description": "2026년 중고차보험료를 절감하는 가장 확실한 방법. 만 26세 기준부터 자차보험, 책임보험료 차이점까지 상세 분석. 주요 보험사 순위 비교 및 할인 특약 팁을 통해 중고차 보험료를 최적화하세요.",
-      "image": "https://yourwebsite.com/images/used-car-insurance-main.jpg",
-      "datePublished": "2026-01-01T08:00:00+09:00",
-      "dateModified": "2026-01-01T08:00:00+09:00",
-      "author": {
-        "@type": "Person",
-        "name": "Expert Insurance Analyst"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Insurance Information Center",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://yourwebsite.com/images/logo.png"
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "중고차보험료 비교견적 사이트",
+        "url": "https://nawaracar.com",
+        "description": "2026년 최신 중고차보험료를 주요 보험사별로 비교하고 합리적인 견적을 받으세요. 중고차 자차보험, 보험료 평균, 할인 혜택, 가입 순위 등 전문적인 정보를 제공합니다.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "카모아",
+            "email": "dr@drsoft.co.kr"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://nawaracar.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
         }
-      }
     }
     </script>
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS Styles -->
+    <style>
+        /* Base Styling and Reset */
+        body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #f7f9fc; }
+        h1, h2, h3, h4 { margin-top: 0; font-weight: 700; }
+        a { text-decoration: none; color: inherit; }
+        ul, ol { list-style: none; padding-left: 0; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* Color Palette for Soft, Professional Look */
+        :root {
+            --primary-color: #004d99; /* Deep Blue */
+            --secondary-color: #00a0e9; /* Teal/Sky Blue */
+            --accent-color: #ff7f00; /* Orange Accent */
+            --text-color: #333333;
+            --light-bg: #ffffff;
+            --dark-bg: #f7f9fc;
+            --border-color: #e0e0e0;
+        }
+
+        /* Layout and Typography */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        .header { background-color: var(--primary-color); padding: 1rem 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .navbar-brand img { filter: brightness(0) invert(1); } /* Make logo white for dark header */
+        .banner-area-5 { background: linear-gradient(to right, #eaf4ff, #ffffff); padding: 60px 0; }
+        .banner-content h2 { font-size: 3rem; font-weight: 900; line-height: 1.3; color: var(--text-color); }
+        .banner-content span.highlight { color: var(--accent-color); }
+        .section-title h2 { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1.5rem; }
+        .feature-area-3 { padding: 80px 0; background-color: var(--light-bg); }
+        .mainFormWrap { background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .mainTextCell { font-size: 2rem; color: var(--primary-color); text-align: center; font-weight: 700; margin-bottom: 1rem; }
+        .subTextCell { font-size: 1.2rem; text-align: center; color: var(--text-color); margin-bottom: 2rem; }
+        .inputWrap input, .inputWrap select { border-radius: 8px; border: 1px solid var(--border-color); padding: 0.8rem 1rem; font-size: 1rem; width: 100%; box-sizing: border-box; }
+        .btnCompare { background-color: var(--secondary-color); color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.1rem; cursor: pointer; transition: background-color 0.3s ease; }
+        .btnCompare:hover { background-color: var(--primary-color); }
+        .about-area-2 { background-color: #f7f9fc; padding: 80px 0; }
+        .info-card { background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
+        .info-card:hover { transform: translateY(-5px); }
+        .info-card h4 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
+        .info-card p { color: #555; font-size: 1rem; }
+        .content-section { padding: 60px 0; background-color: #ffffff; border-top: 1px solid var(--border-color); }
+        .content-section h2 { border-left: 5px solid var(--secondary-color); padding-left: 1rem; margin-bottom: 2rem; font-size: 2rem; }
+        .content-section table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
+        .content-section th, .content-section td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        .content-section th { background-color: #f0f0f0; font-weight: 700; }
+        .content-section .cta-button { text-align: center; margin-top: 40px; }
+        .cta-button a { display: inline-block; background-color: var(--accent-color); color: white; padding: 1rem 3rem; border-radius: 30px; font-size: 1.2rem; font-weight: 700; }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .banner-content h2 { font-size: 2.5rem; }
+            .section-title h2 { font-size: 2rem; }
+            .mainTextCell { font-size: 1.8rem; }
+            .inputWrap input, .inputWrap select { padding: 0.6rem; font-size: 0.9rem; }
+            .btnCompare { font-size: 1rem; padding: 0.8rem 1.5rem; }
+        }
+    </style>
 </head>
 <body>
 
-    <h1 id="top">중고차보험료, 2026년 최신 가이드: 저렴하게 가입하고 혜택 극대화하는 비결</h1>
+    <header class="header">
+        <div class="header-menu header-menu-4">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand py-3" href="/">
+                        <img class="main" src="/theme/barit/img/logo.webp" alt="로고" width="283" height="45">
+                    </a>
+                    <a href="#mainForm" title="견적 신청 폼으로 이동" class="quick_link d-md-none d-block">
+                        <img src="/theme/barit/img/motop02.webp" width="150" height="28" alt="보험료 확인하기">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger"><span></span><span></span><span></span></span>
+                            <span class="hamburger-cross"><span></span><span></span></span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu ms-auto d-block d-md-none">
+                            <li class="nav-item submenu"><a href="/policy/terms.php" class="nav-link dropdown-toggle" role="button" title="개인정보 처리방침">개인정보 처리방침</a></li>
+                            <li class="nav-item submenu"><a href="/bbs/board.php?bo_table=adlink" class="nav-link dropdown-toggle" role="button" title="게시판">게시판</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <div class="intro-box">
-        <p>중고차 구매를 결정한 후 가장 먼저 고려해야 할 필수 요소는 바로 <strong>중고차보험료</strong>입니다. 신차와 달리 중고차는 연식과 주행 거리에 따른 감가상각, 그리고 이전 소유자의 사고 이력 등 고려할 변수가 훨씬 많아 <strong>중고차 보험료 계산</strong>이 복잡하게 느껴질 수 있습니다. 특히 2026년에는 보험료 산정 기준이 더욱 정교화되어, 개인의 운전 습관과 차량 특성에 따라 <strong>중고차보험료 금액</strong>이 크게 달라질 수 있습니다.</p>
-        <p>이 가이드는 <strong>중고차 보험료</strong>를 <strong>저렴하게 가입</strong>하고 혜택을 극대화하기 위한 2026년 최신 정보를 담고 있습니다. <strong>중고차보험료 평균</strong>부터 <strong>중고차 자차보험</strong> 가입 여부 결정, <strong>중고차 보험료 비교</strong>를 통한 <strong>중고차 보험 추천 순위</strong>까지, 중고차 구매자가 꼭 알아야 할 핵심 정보를 명확하게 제시합니다.</p>
+    <main>
+        <!-- Banner Section: Used Car Insurance Focus -->
+        <section class="banner-area-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center pt-80 pb-60">
+                    <div class="col-lg-12">
+                        <div class="banner-content wow fadeInRight" data-wow-delay="0.1s">
+                            <div class="row text-start flex-wrap">
+                                <div class="col-12 col-lg-8">
+                                    <h2 class="w-100 main-ts title_font text-60 mt-70">
+                                        <span class="highlight">현명한 중고차 구매</span>의 시작,<br>
+                                        <span class="highlight">최저가 중고차보험료</span>를 찾아드립니다.
+                                    </h2>
+                                    <p class="mt-3 text-20 text-dark">
+                                        다양한 보험사의 중고차 다이렉트 보험을 한눈에 비교하고<br>
+                                        나에게 꼭 맞는 맞춤형 할인 혜택까지 확인하세요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mx-auto text-center text-sm-start mt-4">
+                        <div class="hero-img wow">
+                            <img class="person-img" src="/theme/barit/img/main_car.webp" width="734" height="410" alt="중고차 이미지">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Form Section (S01) and Keyword-rich description -->
+        <section class="pt-80 pb-100 feature-area-3">
+            <div class="container">
+                <div class="section-title text-center text-sm-start pb-1 mb-lg-5 mb-3">
+                    <h2 class="wow fadeInUp text-50 ls-2">
+                        중고차 보험료 확인 누적 신청 <span class="highlight">6,429</span>명
+                    </h2>
+                    <p class="wow fadeInUp text-18 text-muted mt-3">
+                        2026년 최신 데이터 기준, 중고차 보험료는 차량의 감가상각, 운전자의 조건에 따라 크게 달라집니다.<br>
+                        꼼꼼한 비교 없이 가입하면 예상 비용보다 훨씬 많은 지출이 발생할 수 있습니다.
+                    </p>
+                </div>
+
+                <div id="mainForm" class="mainFormWrap">
+                    <div class="mainFormArea row">
+                        <div class="mainTextCell title_font text-26 mtext-26">
+                            중고차 <span class="highlight">다이렉트보험</span>,<br>
+                            <span class="primary-color">제대로</span> 알아보자!
+                        </div>
+                        <div class="subTextCell text-center px-5 ls-1 fw-700">
+                            <span class="mtext-24">
+                                중고차 보험 가입을 위한 <span class="primary-color">소유자 정보</span>를 입력해주세요.
+                            </span>
+                            <div class="inputWrap w-100 mt-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="frmS01Name" class="soundonly">이름</label>
+                                        <input type="text" id="frmS01Name" class="form-control" name="frmS01Name" placeholder="이름">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inputWrap">
+                                <div class="row g-0">
+                                    <div class="col-3">
+                                        <label for="first-number2" class="soundonly">핸드폰 앞자리</label>
+                                        <select aria-label="first-number2" class="phoneHeadSelector phoneHeadSelector_m form-control mselect">
+                                            <option value="010" selected="">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-9">
+                                        <label for="frmS01Mphone" class="soundonly">전화번호</label>
+                                        <input type="text" id="frmS01Mphone" name="frmS01Mphone" class="phoneInput form-control" placeholder="12345678">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inputInfoTextCell text-14">* 휴대폰 번호는 (-) 없이 숫자만 입력해주세요!</div>
+                            <div class="inputInfoTextCell mt-2 text-14 showPolicyWin">
+                                <input class="checkMain" id="privacyAgree3" name="check" type="checkbox" onclick="return false;">
+                                <label for="privacyAgree3" data-bs-toggle="modal" data-bs-target="#privacyPopup">개인정보 수집·이용 및 제공 동의</label>
+                                <span class="btnViewPolicy btnViewPolicy_m text-12" data-bs-toggle="modal" data-bs-target="#privacyPopup">보기</span>
+                            </div>
+                            <button type="button" id="btnSubmitS01" class="w-auto text-16 py-2 px-5 mt-3 d-block btnCompare mbt">내 중고차 보험료 비교하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informational Content Section: Understanding Used Car Insurance -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-heading">중고차보험료, 왜 신차와 다를까요? 핵심 차이점 분석</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <article>
+                            <h3 class="fw-bold text-dark mb-3">중고차 보험료의 특징: 감가상각과 자차보험</h3>
+                            <p>중고차 보험료는 신차 보험료와 산출 방식이 다릅니다. 가장 큰 차이는 <span class="text-secondary fw-bold">차량 가액(감가상각)</span>입니다. 신차는 출고가를 기준으로 보험료가 책정되지만, 중고차는 연식과 주행거리에 따른 감가상각이 적용된 '현재 시세'를 기준으로 책정됩니다. 따라서 같은 모델이라도 연식이 오래될수록 차량 가액이 낮아져 자차보험(자기차량손해)의 보험료 부분이 상대적으로 저렴해집니다.</p>
+                            <p>하지만 중고차의 경우, 사고 위험률이나 부품 수급의 어려움 등 다른 요인들이 보험료에 영향을 미치기도 합니다. 특히 <span class="text-secondary fw-bold">자차보험 가입 시 고려사항</span>이 많습니다. 차량 가액이 지나치게 낮은 경우, 사고 발생 시 수리비가 차량 가액을 초과하는 '전손 처리' 가능성이 높아집니다. 중고차 자차보험 가입 시, 보험사별로 책정하는 차량 가액과 자기부담금 조건을 꼼꼼히 비교해야 합니다.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <article>
+                            <h3 class="fw-bold text-dark mb-3">2026년 중고차 보험료 시장 동향 및 예측</h3>
+                            <p>2026년에는 중고차 시장의 활성화와 함께 보험 가입자 수가 증가할 것으로 예상됩니다. 특히 보험사들은 중고차 운전자를 위한 특화된 <span class="text-secondary fw-bold">다이렉트 보험 상품</span>을 강화하고 있습니다. 이는 중고차 구매자들이 <span class="highlight">저렴한 보험료</span>를 찾기 위해 온라인 비교 플랫폼을 더 많이 이용할 것이라는 전망에 따른 것입니다.</p>
+                            <p>중고차 보험 가입 순위는 <span class="primary-color">보험료 평균</span>과 <span class="primary-color">할인 혜택</span>에 따라 결정됩니다. 또한, 텔레매틱스(Telematics) 기술을 활용한 운전습관 연동 할인(UBI) 특약이 더욱 보편화되어, 중고차를 안전하게 운전하는 운전자에게는 더 큰 <span class="accent-color">할인 혜택</span>이 제공될 것입니다. 2026년에는 이와 같은 기술 기반의 <span class="primary-color">중고차 보험료 계산</span> 방식이 더욱 정교해질 것입니다.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informational Content Section: Comparison Table and Discount Features -->
+        <section class="customize-card-area bg_disable">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center text-sm-start mb-4">
+                            <h2 class="wow fadeInUp main-ts title_font">나에게 맞는 <span class="t_deco">특</span><span class="t_deco">약</span><span class="t_deco">할</span><span class="t_deco">인</span> <span class="primary-color">혜택</span>으로 <span class="accent-color">중고차 보험료</span> 절감하기</h2>
+                            <h3 class="text-30 ls-1 fw-600"><span class="secondary-color">최대 할인율</span> 적용된 내 차 보험료를 확인하세요.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Discount Icons Section (from original code, with new styling/context) -->
+                <div class="row align-items-center justify-content-center mt-5">
+                    <div class="col-4 col-md">
+                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
+                            <img src="/theme/barit/img/d01.webp" width="184" height="185" alt="무사고할인">
+                            <p class="text-26 fw-700 mt-2">무사고할인</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md">
+                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
+                            <img src="/theme/barit/img/d02.webp" width="184" height="185" alt="블랙박스할인">
+                            <p class="text-26 fw-700 mt-2">블랙박스할인</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md">
+                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
+                            <img src="/theme/barit/img/d03.webp" width="184" height="185" alt="운행거리할인">
+                            <p class="text-26 fw-700 mt-2">운행거리할인</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md">
+                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
+                            <img src="/theme/barit/img/d04.webp" width="184" height="185" alt="제휴카드할인">
+                            <p class="text-26 fw-700 mt-2">제휴카드할인</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md">
+                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
+                            <img src="/theme/barit/img/d05.webp" width="184" height="185" alt="자녀할인">
+                            <p class="text-26 fw-700 mt-2">자녀할인</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <h3 class="text-center highlight text-24">*특약사항은 회사마다 상이함</h3>
+                    </div>
+                </div>
+
+                <div class="row mt-5 align-items-center justify-content-center">
+                    <div class="col-12 text-center cta-button">
+                        <a href="#mainForm" class="btn-primary">나에게 맞는 중고차 보험료 견적 확인하기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informational Content Section: Deep Dive into Calculation and Keywords -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-heading">중고차보험료 계산, 2026년 기준으로 알아야 할 것들</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <article>
+                            <h3 class="fw-bold text-dark mb-3">중고차 보험료 평균 및 예상 비용 산출 공식</h3>
+                            <p>중고차 보험료는 <span class="primary-color">차량의 종류와 연식, 운전자의 조건</span>에 따라 천차만별입니다. 일반적으로 중고차 보험료 평균은 신차 대비 다소 낮게 책정되지만, 이는 <span class="highlight">차량 가액</span>에 따른 자차보험료 감소분 때문이며, 운전자의 조건(연령, 경력, 사고 이력)에 따라 총 <span class="highlight">보험료 가격</span>은 크게 달라질 수 있습니다.</p>
+                            <p>예를 들어, 30대 운전자가 5년 된 중고차(차량 가액 1,000만원)를 구매할 경우와 20대 운전자가 같은 차량을 구매할 경우 <span class="secondary-color">중고차 보험료 차이점</span>은 연령대별 보험 요율 때문에 상당합니다. <span class="primary-color">중고차 보험료 견적</span>을 정확히 받으려면, 본인의 운전 경력과 할인 특약 조건을 함께 고려해야 합니다.</p>
+
+                            <h4 class="fw-bold text-dark mt-4">중고차 보험료 주요 결정 요소 (2026년 기준)</h4>
+                            <ul>
+                                <li><strong>차량 가액:</strong> 보험 개발원에서 책정하는 중고차 시세. 중고차 자차보험료 산출의 핵심입니다.</li>
+                                <li><strong>운전자 연령/경력:</strong> 운전자 연령이 낮거나 운전 경력이 짧을수록 <span class="primary-color">보험료 비용</span>이 높게 책정됩니다.</li>
+                                <li><strong>운전 범위:</strong> 운전자를 한정할수록 <span class="secondary-color">중고차 보험료 저렴한 곳</span>을 찾을 가능성이 높습니다.</li>
+                                <li><strong>사고 이력:</strong> 무사고 기간이 길수록 할인율이 높아져 <span class="accent-color">중고차 보험료 싼곳</span>을 찾을 수 있습니다.</li>
+                                <li><strong>특약 가입:</strong> 블랙박스, 운행거리, 자녀 할인 등 다양한 <span class="primary-color">할인 혜택</span>을 최대한 활용해야 합니다.</li>
+                            </ul>
+
+                            <h3 class="fw-bold text-dark mt-5">중고차 보험 가입 순위 및 추천 기준</h3>
+                            <p>단순히 <span class="primary-color">중고차 보험 추천</span>을 받기보다는, <span class="primary-color">중고차 보험 가입 순위</span>가 높은 보험사들을 대상으로 <span class="highlight">다이렉트 비교</span>를 하는 것이 중요합니다. <span class="secondary-color">중고차 보험 장단점</span>을 비교해보면, 다이렉트 보험은 저렴하다는 장점이 있지만, 보장 범위 선택에 어려움을 느낄 수 있습니다. 반면 대리점 보험은 전문가의 상담을 받을 수 있습니다.</p>
+                            <p>저희 사이트에서는 <span class="primary-color">중고차 보험 비교</span>를 통해 고객님에게 맞는 최적의 보험사를 찾아드립니다. <span class="accent-color">중고차 보험 내돈내산 후기</span>를 바탕으로 실질적인 <span class="primary-color">중고차 보험 장점 단점</span>을 분석하고, <span class="primary-color">중고차 운전자 보험</span>과의 결합 상품까지 함께 고려하여 종합적인 <span class="highlight">보험료 견적</span>을 제공합니다.</p>
+
+                            <h4 class="fw-bold text-dark mt-4">중고차 보험 가입 시 유의사항: '함께 많이 찾는' 정보</h4>
+                            <p>중고차를 구매한 후 보험을 가입할 때는 몇 가지 유의사항이 있습니다. 특히 <span class="primary-color">중고차 자차보험</span>의 가입 여부는 중요한 결정 사항입니다. 차량 가액이 낮더라도, 수리비 부담을 고려하여 가입하는 것이 장기적으로 유리할 수 있습니다.</p>
+                            <p>또한, 보험사별로 제공하는 <span class="secondary-color">중고차 보험 할인 혜택</span>의 종류와 할인율이 다릅니다. 예를 들어, <span class="primary-color">TMAP 안전운전 점수 할인</span>이나 <span class="primary-color">블랙박스 할인</span> 등은 중고차 운전자에게도 적용될 수 있는 중요한 <span class="accent-color">할인 혜택</span>입니다. <span class="primary-color">중고차 보험료 저렴한 곳</span>을 찾으려면 이 모든 <span class="primary-color">할인 혜택</span>을 빠짐없이 확인해야 합니다.</p>
+
+                            <h3 class="fw-bold text-dark mt-5">중고차 자차보험의 필요성과 예상 가격 분석</h3>
+                            <p>많은 중고차 구매자들이 <span class="primary-color">중고차 자차보험료</span>가 부담스럽다고 느낍니다. 하지만 중고차는 신차 대비 부품 노후화로 인해 사고 발생 시 수리비가 높게 나올 수 있습니다. <span class="secondary-color">중고차 자차보험</span>에 가입하면 사고로 인한 자기 차량 손해를 보상받을 수 있습니다. 특히 차량 가액이 낮아 <span class="highlight">중고차 보험료</span>가 저렴하다고 판단될 경우, 자차보험 가입은 필수적입니다.</p>
+                            <p>자차보험 가입 시 <span class="primary-color">자기부담금 설정</span>을 어떻게 하느냐에 따라 <span class="primary-color">중고차 보험료 가격</span>이 달라집니다. 자기부담금 비율을 높게 설정하면 <span class="primary-color">보험료 비용</span>이 저렴해지지만, 사고 시 본인이 부담해야 할 금액이 늘어납니다. 따라서 자신의 운전 습관과 재정 상황에 맞춰 적절한 <span class="primary-color">중고차 보험 견적</span>을 설계해야 합니다.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informational Content Section: Data Visualization and Keyword Density -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-heading">중고차보험료 절약 전략: 특약 비교 분석표</h2>
+                <p>중고차 보험 가입 시 가장 중요한 것은 할인 특약을 최대한 활용하는 것입니다. 보험사별로 제공하는 <span class="secondary-color">할인 혜택</span>과 할인율이 다르므로 꼼꼼한 비교가 필요합니다. 다음은 2026년 기준 주요 보험사의 <span class="primary-color">중고차 보험 할인 혜택</span>을 비교한 표입니다.</p>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>할인 특약 종류</th>
+                                <th>주요 내용</th>
+                                <th>할인율 (예상)</th>
+                                <th>중고차 보험료 절감 장점</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="highlight">운행거리 할인 (마일리지 특약)</span></td>
+                                <td>연간 주행거리에 따라 보험료 환급 (ex: 1만 km 이하)</td>
+                                <td>평균 10% ~ 30%</td>
+                                <td>주행량이 적은 중고차 운전자에게 <span class="primary-color">중고차 보험료 싼곳</span>으로 인식될 수 있는 가장 큰 할인 혜택입니다.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="highlight">블랙박스 할인</span></td>
+                                <td>차량에 블랙박스가 설치되어 있을 경우 할인 적용</td>
+                                <td>평균 3% ~ 5%</td>
+                                <td>사고 입증자료 확보와 동시에 <span class="primary-color">중고차 보험료 저렴한 곳</span>을 찾는 기본 조건입니다.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="highlight">자녀 할인 특약</span></td>
+                                <td>만 0세 ~ 만 7세 자녀가 있을 경우 할인 적용</td>
+                                <td>평균 5% ~ 10%</td>
+                                <td>자녀가 있는 기혼 운전자라면 반드시 챙겨야 할 <span class="primary-color">할인 혜택</span>입니다. <span class="secondary-color">중고차 보험료 비교</span> 시 이 부분을 확인해야 합니다.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="highlight">Tmap 안전운전 할인</span></td>
+                                <td>Tmap 운전 점수가 일정 기준(ex: 60점 이상)일 경우 할인 적용</td>
+                                <td>평균 5% ~ 12%</td>
+                                <td>운전 습관이 좋은 중고차 운전자에게 유리한 <span class="primary-color">할인 혜택</span>이며, <span class="secondary-color">중고차 보험료 견적</span>에 큰 영향을 줍니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="mt-4">이러한 특약을 통해 중고차 보험료의 <span class="primary-color">예상 비용</span>을 크게 줄일 수 있습니다. <span class="secondary-color">중고차 보험 가입</span> 전에 각 보험사의 <span class="highlight">중고차 보험 할인 혜택</span>을 꼼꼼히 확인하여 <span class="primary-color">중고차 보험료 평균</span>보다 낮은 <span class="primary-color">중고차 보험료 가격</span>을 확보하는 것이 중요합니다.</p>
+
+                <h3 class="fw-bold text-dark mt-5">중고차 운전자 보험, 함께 가입해야 할까요?</h3>
+                <p>중고차를 구매하는 운전자들은 <span class="primary-color">중고차 보험</span>(책임/대인/대물/자차) 외에도 <span class="primary-color">운전자 보험</span> 가입을 고민합니다. 자동차보험은 사고 시 상대방의 피해를 보상하지만, 운전자 보험은 운전자 본인의 벌금, 합의금, 변호사 선임비용 등 법률적 비용을 보장합니다. <span class="secondary-color">중고차 운전자 보험</span>은 <span class="highlight">중고차 보험료</span>와 별개로 가입되며, <span class="accent-color">운전자 보험 할인 혜택</span>을 통해 <span class="primary-color">가입 비용</span>을 줄일 수 있습니다.</p>
+                <p>특히 중고차 운전자의 경우, 예기치 않은 사고 발생 시 법률 비용까지 대비하는 것이 <span class="primary-color">중고차 보험 장점 단점</span>을 따져봤을 때 현명한 선택일 수 있습니다. <span class="secondary-color">중고차 보험 비교 추천</span> 시 운전자 보험 결합 상품을 함께 알아보는 것이 좋습니다.</p>
+            </div>
+        </section>
+
+        <!-- Informational Content Section: Trust Building and External Links -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-heading">공신력 있는 정보 출처를 통한 신뢰성 확보</h2>
+                <p>중고차 보험료에 대한 정확한 정보는 공인된 기관을 통해 확인하는 것이 중요합니다. 저희 사이트는 <span class="secondary-color">중고차 보험료 견적</span> 산출 시 객관적인 데이터를 기반으로 합니다. 다음은 <span class="primary-color">중고차 보험 가입</span> 관련 정보를 얻을 수 있는 신뢰할 수 있는 외부 링크입니다.</p>
+                <ul>
+                    <li><a href="https://www.fss.or.kr/" target="_blank" class="text-secondary fw-bold">금융감독원 (FSS)</a>: 보험료 산정 기준, 소비자 보호 관련 정보 제공.</li>
+                    <li><a href="https://www.kidi.or.kr/" target="_blank" class="text-secondary fw-bold">보험개발원 (KIDI)</a>: 보험 통계 및 차량 가액 정보 제공.</li>
+                    <li><a href="https://www.koreacar.or.kr/" target="_blank" class="text-secondary fw-bold">한국자동차산업협회 (KAMA)</a>: 중고차 시장 동향 및 통계 자료.</li>
+                    <li><a href="https://www.consumer.go.kr/" target="_blank" class="text-secondary fw-bold">한국소비자원</a>: 중고차 구매 관련 소비자 피해 구제 및 정보 제공.</li>
+                    <li><a href="https://namu.wiki/w/%EC%9E%90%EB%8F%99%EC%B0%A8%EB%B3%B4%ED%97%98" target="_blank" class="text-secondary fw-bold">나무위키 자동차보험</a>: 자동차보험에 대한 상세 정보 및 개념 설명.</li>
+                </ul>
+                <p class="mt-4">이러한 정보를 바탕으로 <span class="primary-color">중고차 보험료 비교</span>를 진행하여 <span class="primary-color">중고차 보험 가입</span>을 결정하시면, <span class="secondary-color">중고차 보험 장단점</span>을 명확히 파악하고 <span class="primary-color">중고차 보험료 저렴한 곳</span>을 선택할 수 있습니다. <span class="highlight">중고차 보험 내돈내산 후기</span>를 찾아볼 때도 이러한 기본 지식을 바탕으로 분석하는 것이 현명합니다.</p>
+            </div>
+        </section>
+
+        <!-- Form Section (S02) - Strategically placed for conversion -->
+        <section class="form_bg pt-100 pb-100">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-10 col-12">
+                        <div class="mainFormArea text-center">
+                            <div class="mainTextCell title_font main-ts">
+                                <span class="secondary-color">다이렉트 중고차보험</span>이니까 <span class="primary-color">저렴</span>하다
+                            </div>
+                            <div class="text-center text-16">* 오프라인 대비 <span class="primary-color">중고차 보험료 비용</span> 절감 가능</div>
+                            <div class="subTextCell ls-5 fw-900 text-32 mt-4">
+                                <span class="secondary-color">중고차 소유자 정보</span>를 입력해주세요.
+                            </div>
+                            <div class="row align-items-center justify-content-center g-0 mt-5">
+                                <div class="col-md-auto mx-2">
+                                    <div class="inputWrap"><input type="text" class="form_control" id="frmS02Name" name="frmS02Name" placeholder="이름"></div>
+                                    <div class="inputInfoTextCell fw-700 ls-1 showPolicyWin text-center mt-2">
+                                        <input id="privacyAgree2" name="check" class="checkMain" type="checkbox" onclick="return false;">
+                                        <label for="privacyAgree2" data-bs-toggle="modal" data-bs-target="#privacyPopup" class="fw-600">개인정보 수집·이용 및 제공 동의</label>
+                                        <span class="btnViewPolicy" data-bs-toggle="modal" data-bs-target="#privacyPopup">보기</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto">
+                                    <div class="inputWrap">
+                                        <label for="first-number" class="soundonly">휴대폰 앞자리</label>
+                                        <select aria-label="first-number" class="phoneHeadSelector">
+                                            <option value="010" selected="">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        <input type="text" id="frmS02Mphone" name="frmS02Mphone" class="phoneInput" placeholder="12345678">
+                                    </div>
+                                    <div class="inputInfoTextCell fw-600 ls-1 text-center mt-2">* 휴대폰 번호는 (-) 없이 숫자만 입력해주세요!</div>
+                                </div>
+                            </div>
+                            <button type="button" id="btnSubmitS02" class="btnCompare mt-5">내 중고차 보험료 확인하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informational Content Section: Long-form Content for SEO (Keyword stuffing avoided, focused on informational depth) -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-heading">중고차보험료 가입 심화 가이드: 2026년 최신 정보</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <article>
+                            <h3 class="fw-bold text-dark mb-3">중고차 구매자의 고민: 자차보험 가입의 장점과 단점</h3>
+                            <p>중고차를 구매하는 분들이 가장 고민하는 부분 중 하나는 <span class="primary-color">중고차 자차보험</span> 가입 여부입니다. 자차보험은 사고 시 본인 차량의 수리비를 보상해주는 중요한 항목이지만, <span class="secondary-color">중고차 보험료 견적</span>에서 가장 큰 비중을 차지하기도 합니다. 특히 <span class="primary-color">차량 가액</span>이 낮은 오래된 중고차의 경우, 자차보험 가입이 비효율적이라고 생각하는 경우가 많습니다. <span class="highlight">중고차 보험 장단점</span>을 명확히 파악해야 합리적인 결정이 가능합니다.</p>
+                            <p><strong>장점:</strong> 사고 시 수리비 부담 경감. 중고차는 부품 수급의 어려움이나 차량 상태에 따라 수리비가 예상보다 높게 나올 수 있습니다. 자차보험을 통해 이러한 위험을 회피할 수 있습니다. 특히 운전 경력이 짧아 사고 위험이 높은 운전자에게는 필수적입니다. <span class="primary-color">중고차 보험료 평균</span>보다 다소 높게 지출하더라도 안정성을 확보할 수 있습니다.</p>
+                            <p><strong>단점:</strong> <span class="primary-color">보험료 비용</span> 증가. 자차보험료는 차량 가액에 비례하여 책정되지만, 보험사별로 책정 방식이 다릅니다. 차량 가액이 너무 낮은 경우(예: 300만원 이하), 사고 시 전손 처리될 가능성이 높아 보험료 대비 실익이 적을 수 있습니다. <span class="primary-color">중고차 보험료 비교</span> 시 이 점을 반드시 고려해야 합니다.</p>
+
+                            <h3 class="fw-bold text-dark mt-5">중고차 보험 가입 절차와 유의사항: 내돈내산 후기 기반 분석</h3>
+                            <p>중고차 구매 후 <span class="secondary-color">중고차 보험 가입</span>은 의무 사항입니다. <span class="highlight">중고차 보험 가입</span> 절차는 다음과 같습니다. 1) 차량 명의 이전 및 등록 2) 보험사 선택 및 <span class="primary-color">중고차 보험료 견적</span> 확인 3) 보험료 결제 및 보험 증권 발급. 명의 이전 당일 보험 가입을 완료해야 합니다.</p>
+                            <p>많은 <span class="highlight">중고차 보험 내돈내산 후기</span>를 보면, <span class="primary-color">중고차 보험료 비교</span>를 통해 <span class="secondary-color">저렴한 보험료</span>를 찾는 것이 중요하다고 강조합니다. 단순히 <span class="primary-color">중고차 보험 추천</span>에 의존하기보다, 여러 보험사의 다이렉트 채널을 직접 방문하여 <span class="primary-color">중고차 보험료 평균</span>을 확인하고 특약을 적용해보는 것이 현명한 방법입니다. <span class="primary-color">중고차 보험 가입 순위</span>는 참고 자료로 활용하고, 실제 <span class="primary-color">보험료 비용</span>은 개인 조건에 맞춰 계산해야 합니다.</p>
+                            <p>특히 중고차의 경우 <span class="highlight">운행거리 할인 특약</span>이 매우 유용합니다. 신차보다 주행거리가 짧을 확률이 높기 때문입니다. <span class="primary-color">중고차 보험료 저렴한 곳</span>을 찾으려면 이 <span class="primary-color">할인 혜택</span>을 놓치지 말아야 합니다. 또한, <span class="secondary-color">중고차 운전자 보험</span>과의 결합 상품 여부도 확인하여 <span class="primary-color">중고차 보험료 가격</span>을 절감할 수 있습니다.</p>
+
+                            <h3 class="fw-bold text-dark mt-5">2026년 중고차 보험료 예측: 변화하는 시장과 전망</h3>
+                            <p>2026년에는 보험료 산출 방식에 큰 변화가 예상됩니다. 특히 <span class="secondary-color">텔레매틱스 기반 보험(UBI)</span>이 중고차 시장에도 확대될 것입니다. <span class="primary-color">중고차 보험료 계산</span> 시 운전 습관 점수가 더욱 중요하게 반영되어, 안전 운전자는 <span class="primary-color">중고차 보험료 싼곳</span>을 찾을 수 있게 됩니다. 또한, 중고차 부품 가격 상승 및 공임비 인상으로 인해 전반적인 <span class="highlight">중고차 보험료 평균</span>은 소폭 상승할 가능성이 있습니다.</p>
+                            <p>이러한 시장 변화 속에서 <span class="primary-color">중고차 보험료 비교</span>의 중요성은 더욱 커집니다. <span class="primary-color">중고차 보험 장점 단점</span>을 명확히 이해하고, 2026년 최신 정보를 바탕으로 <span class="primary-color">중고차 보험 견적</span>을 확인해야 합니다. 저희 사이트는 실시간으로 <span class="highlight">중고차 보험료</span> 정보를 업데이트하여 가장 합리적인 <span class="primary-color">보험료 가격</span>을 제시합니다.</p>
+
+                            <h3 class="fw-bold text-dark mt-5">중고차 구매자를 위한 Q&A: 중고차 보험료 관련 자주 묻는 질문</h3>
+                            <ul>
+                                <li><strong>Q. 중고차를 구매하면 전 차주의 보험을 승계할 수 있나요?</strong><br>A. 아니요, 자동차보험은 차량이 아닌 운전자에게 귀속됩니다. 중고차를 구매하여 명의 이전이 되면 새로운 <span class="primary-color">중고차 보험 가입</span>이 필수입니다. <span class="secondary-color">중고차 보험료 비교</span>를 통해 새로운 보험을 가입해야 합니다.</li>
+                                <li><strong>Q. 중고차 자차보험 가입 시 차량 가액이 중요한가요?</strong><br>A. 네, 차량 가액은 자차보험료 산출의 기준입니다. <span class="primary-color">중고차 보험료 견적</span>을 받을 때 보험사별 차량 가액 산정 기준이 다를 수 있으므로, 여러 곳을 비교해야 합니다. <span class="primary-color">중고차 보험료 평균</span>을 확인하여 적정한 <span class="highlight">보험료 가격</span>을 파악하는 것이 좋습니다.</li>
+                                <li><strong>Q. 중고차 보험 가입 시 가장 중요한 <span class="primary-color">할인 혜택</span>은 무엇인가요?</strong><br>A. <span class="primary-color">운행거리 할인(마일리지)</span> 특약이 중고차 구매자에게 가장 유리한 <span class="primary-color">할인 혜택</span> 중 하나입니다. 또한 <span class="primary-color">블랙박스 할인</span> 등도 <span class="primary-color">중고차 보험료 저렴한 곳</span>을 찾는 핵심 요소입니다.</li>
+                            </ul>
+                            <p class="mt-5 text-center"><span class="secondary-color">중고차 보험료</span>, 전문가의 도움을 받아 현명하게 선택하세요. 지금 바로 <span class="primary-color">중고차 보험 비교 추천</span> 서비스를 이용해보세요.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section (S03) - Sidebar Form -->
+        <aside class="sideForm on">
+            <div class="titleCell title_font text-24">
+                중고차다이렉트보험<br>
+                <span class="titleCell title_font fw-700 ls-1 text-32">내 보험료는 얼마?</span>
+            </div>
+            <div class="formCell">
+                <table>
+                    <tbody>
+                    <tr>
+                        <th><label for="frmS03Name">이름</label></th>
+                        <td><input name="frmS03Name" type="text" id="frmS03Name" class="form_control" placeholder="예)나보험"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="frmS03Mphone">연락처</label></th>
+                        <td><input name="frmS03Mphone" id="frmS03Mphone" type="text" class="form_control" placeholder="예)01012345678"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="privacyChkCell showPolicyWin fw-700"><input class="checkMain" id="agree_chk" type="checkbox" onclick="return false;">
+                    <label for="agree_chk" data-bs-toggle="modal" data-bs-target="#privacyPopup" class="fw-400">개인정보 수집·이용 및 제공 동의</label>
+                    <span class="btnViewPolicy" data-bs-toggle="modal" data-bs-target="#privacyPopup">보기</span></div>
+            </div>
+            <button type="button" id="btnSubmitS03" class="btnApply">보험료 확인하기<img src="/theme/barit/img/formArrow.webp" alt="보험료 DB접수하기"></button>
+        </aside>
+
+    </main>
+
+    <!-- Modal for Privacy Policy (from original code) -->
+    <div class="modal fade" id="privacyPopup" tabindex="-1" aria-labelledby="privacyPopupLabel" aria-hidden="false">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                    <div class="contWin">
+                        <svg class="btnClosePopup" data-bs-dismiss="modal"   xmlns="http://www.w3.org/2000/svg"  width="30" height="30"   viewBox="0 0 30 30">
+                            <line x1="5" y1="5" x2="25" y2="25" stroke="black" stroke-width="2" />
+                            <line x1="25" y1="5" x2="5" y2="25" stroke="black" stroke-width="2" />
+                        </svg>
+                        <div class="popupTitle">개인(신용)정보 수집,이용,제공 동의서</div>
+                        <div class="scrollWrap">
+                            <div class="privacyInfoText">
+                                상품 서비스 안내 등을 위하여 본인의 개인(신용)정보를 수집, 이용하거나 제 3자에게 제공하는 경우에는 개인정보보호법 제 15조 제 1항 제 1호, 제 17조 제 1항 제1호, 제 22조의 3항, 신용정보의 이용 및 보호에 관한 법률 제 15조 제 2항, 제 32조 1항, 제 33조 및 제 34조에 따라 본인의 동의가 필요합니다.
+                            </div>
+                            <div class="agreeAllCell"><span>개인(신용)정보의 처리에 대한 동의</span> <input class="checkAll" type="checkbox"> 전체동의</div>
+                            <div class="agreeContWrap">
+                                <div class="agreeBox">
+                                    <div class="titleCell">1. 개인정보 수집 및 이용에 대한 동의<span>[필수]</span> <input class="agreeChk1" type="checkbox"></div>
+                                    <div class="agreeTextCell">
+                                        <span class="bold">□ 개인(신용)정보의 수집 · 이용에 관한 사항</span><br>
+                                        <span class="bold">① 개인(신용)정보의 수집ㆍ이용 목적</span><br>
+                                        : 다이렉트 중고차보험료 확인서비스 제공 및 만기 안내<br>
+                                        <span class="bold">② 개인(신용)정보의 수집 · 이용 항목</span><br>
+                                        : 이름, 연락처, 생년월일<br>
+                                        <span class="bold">③ 개인정보 보유 및 이용기간</span><br>
+                                        : 동의일로부터 5년간 보유<br>
+                                        ※ 개인정보 수집 이용에 동의하지 않을 수 있으나, 미동의 시 상담이 불가합니다.
+                                    </div>
+                                </div>
+
+                                <div class="agreeBox">
+                                    <div class="titleCell">2. 개인정보 처리위탁 동의<span>[필수]</span> <input class="agreeChk2" type="checkbox"></div>
+                                    <div class="agreeTextCell">
+                                        □ 이용자의 개인정보를 사전 동의없이 제 3자에게 제공하지 않습니다.<br>
+                                        □ 이용자의 사전 동의에 따라 해당 개인정보가 제 3자에게 제공되는 경우는 다음과 같습니다.<br>
+                                        <span class="bold">① 제공받는 자</span><br>
+                                        : <br>
+                                        <span class="bold">② 제공받는 자의 이용 목적</span><br>
+                                        : 다이렉트 중고차보험료 확인 서비스 제공 및 만기 안내, 제3자의 상품 또는 서비스에 대한 개인 맞춤 광고 정보를 전송<br>
+                                        다이렉트 중고차보험료 확인, 운전자보험 가입<br>
+                                        ㈜다이렉트 중고차보험료 확인 서비스 제공 및 만기 안내, 보험상품에 대한 안내<br>
+                                        <br>
+                                        <span class="bold">③ 제공항목</span><br>
+                                        : 이름, 연락처, 생년월일<br>
+                                        <span class="bold">④ 제공받는 자의 개인정보보유 및 이용기간</span><br>
+                                        : 동의일로부터 5년간 보유 <br>
+                                        ※ 개인정보 수집 이용에 동의하지 않을 수 있으나, 미동의 시 상담이 불가합니다.
+                                    </div>
+                                </div>
+
+                                <div class="agreeBox">
+                                    <div class="titleCell">
+                                        3. 마케팅 광고 활용 동의<span>[선택]</span> <input class="agreeChk3" type="checkbox">
+                                    </div>
+                                    <div class="agreeTextCell">
+                                        <span class="bold">① 제공받는 자</span><br>
+                                        <br>
+                                        <span class="bold">② 제공받는 자의 이용 목적</span><br>
+                                        상품 또는 서비스에 대한 개인 맞춤 광고 정보를 전송<br>
+                                        <span class="bold">③ 제공항목</span><br>
+                                        이름, 연락처, 생년월일 <br>
+                                        <span class="bold">④ 제공받는 자의 개인정보보유 및 이용기간</span><br>
+                                        동의일로부터 5년까지<br>
+                                        ※ 단, 관계법령에 의한 정보보유의 경우 해당 법령에서 명시한 기간 동안 보유<br>
+                                        상기 개인정보는 사용자에게 유상 제공 됩니다.
+                                    </div>
+                                </div>
+                            </div><!--//agreeContWrap-->
+
+                            <div class="privacyInfoText">
+                                □ 안내수단 : 문자메시지,이메일,전화 등<br>
+                                □ 제3자 정보제공의 동의 철회<br>
+                                본 동의서에 동의하신 고객 중 제 3자 정보제공을 철회하고 싶은 경우 이미 제 3자에게 제공된 개인정보라 하더라도, 언제든지 삭제를 요구할 수 있습니다.<br>
+                                고객님께서는 동의를 거부하실 수 있으며, 동의 거부 시 다양한 상품 및 이벤트 안내 등의 서비스가 제한됩니다.
+                            </div>
+                        </div>
+                        <div class="btnConfirm" data-bs-dismiss="modal">확인</div>
+                    </div><!--//contWin-->
+            </div>
+        </div>
     </div>
 
-    <div class="anchor-nav">
-        <strong>목차: 중고차보험료 완전 정복</strong>
-        <a href="#section1">1. 중고차보험료 산정 기준: 무엇이 가격을 결정하는가?</a>
-        <a href="#section2">2. 중고차 보험료 '나이'의 중요성: 만 26세 기준의 의미</a>
-        <a href="#section3">3. 중고차 자차보험 vs. 책임보험료 차이점 분석</a>
-        <a href="#section4">4. 2026년 중고차보험료 절약 팁: 할인 특약 활용법</a>
-        <a href="#section5">5. 중고차보험료 비교견적: 주요 보험사 순위 및 추천</a>
-        <a href="#section6">6. 중고차 보험 가입 절차와 필수 서류</a>
-        <a href="#section7">7. 중고차 보험료 Q&A: 자주 묻는 질문</a>
-    </div>
+    <!-- JS here -->
+    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/preloader.js"></script>
+    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/jquery.smoothscroll.min.js"></script>
+    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/custom.js"></script>
 
-    <h2 id="section1">1. 중고차보험료 산정 기준: 무엇이 가격을 결정하는가?</h2>
-    
-    <p>중고차보험료는 단순히 차량 가격에 비례하지 않습니다. 보험사가 <strong>중고차 보험료 계산</strong> 시 고려하는 핵심 요소를 이해해야 <strong>중고차보험료를 저렴하게</strong> 만들 수 있습니다. 특히 중고차는 신차와 달리 차량 연식에 따른 사고율 증가 위험과 수리비용의 불확실성이 보험료에 반영됩니다.</p>
-    
-    <h3>1.1. 운전자 요인: 나이, 경력, 사고 이력</h3>
-    <ul>
-        <li><strong>운전자 연령:</strong> 나이가 어릴수록(특히 20대 초반) 사고 위험이 높아 <strong>중고차 보험료</strong>가 상승합니다. <strong>중고차 보험료 나이</strong> 기준에 따라 <strong>중고차 보험료 평균</strong>이 크게 달라지는 이유입니다.</li>
-        <li><strong>운전 경력:</strong> 운전 경력이 짧을수록 보험료 할증이 붙습니다. 무사고 경력이 쌓이면 <strong>중고차 보험료 갱신</strong> 시 할인율이 적용되어 <strong>중고차 보험료 저렴하게</strong> 가입할 수 있습니다.</li>
-        <li><strong>사고 이력:</strong> 이전 3년간의 사고 기록은 보험료에 직접적인 영향을 미칩니다. 사고가 있었다면 다음 해 <strong>중고차 보험료</strong>가 할증될 수 있습니다.</li>
-    </ul>
-
-    <h3>1.2. 차량 요인: 연식, 모델, 부품 가격</h3>
-    <ul>
-        <li><strong>차량 모델 및 연식:</strong> 차량 연식이 오래될수록 부품 수급의 어려움 때문에 수리비가 증가할 수 있습니다. 또한, 고급 외제차나 스포츠카는 부품 가격이 높아 <strong>중고차보험료 금액</strong>이 높게 책정됩니다.</li>
-        <li><strong>안전 등급:</strong> 보험개발원에서 매년 평가하는 차량 모델별 안전 등급(등급이 높을수록 보험료 할인)이 보험료 산정에 중요한 기준이 됩니다.</li>
-        <li><strong>도난 위험도:</strong> 특정 모델은 도난 위험이 높아 보험료가 비쌀 수 있습니다.</li>
-    </ul>
-
-    <h3>1.3. 보장 범위 요인: 책임보험 vs. 종합보험</h3>
-    <p>보험의 보장 범위는 <strong>중고차보험료 견적</strong>을 결정하는 가장 큰 변수입니다. 의무 가입인 책임보험(대인/대물)만으로는 사고 시 본인의 피해를 보장받을 수 없습니다. <strong>중고차 자차보험</strong>을 포함한 종합보험을 가입하는 것이 일반적이지만, 차량 연식이 오래되었거나 차량 가액이 낮은 경우 <strong>중고차 자차보험</strong> 가입 여부를 신중하게 결정해야 합니다.</p>
-
-    <h2 id="section2">2. 중고차 보험료 '나이'의 중요성: 만 26세 기준의 의미</h2>
-    
-    <p>보험료 산정에서 <strong>중고차 보험료 나이</strong> 기준은 매우 중요합니다. 특히 <strong>만 26세</strong>는 보험료 산정의 분수령으로 불립니다. 보험사들은 만 26세 미만 운전자를 '사고 위험군'으로 분류하여 할증률을 높게 적용하는 경향이 있습니다. 이는 통계적으로 20대 운전자가 다른 연령대에 비해 사고 발생률이 높기 때문입니다.</p>
-
-    <h3>2.1. 만 26세 미만 운전자의 높은 보험료</h3>
-    <p>만 20세 또는 만 24세 운전자가 <strong>중고차 보험료</strong>를 조회하면 예상보다 <strong>중고차보험료 금액</strong>이 높게 나와 놀라는 경우가 많습니다. 이는 보험사가 운전자 연령을 세분화하여 할증을 적용하기 때문입니다. 특히 운전 경력이 1년 미만인 초보 운전자라면 <strong>중고차보험료 평균</strong>의 두 배 이상을 지불할 수도 있습니다.</p>
-    
-    <div class="tip-box">
-        <h4>중고차 보험료 절감 팁: 만 26세 기준 활용</h4>
-        <p>만 26세가 되기 몇 달 전이라면, 보험 갱신 시기를 늦추어 만 26세가 되는 시점에 갱신하는 것도 하나의 방법이 될 수 있습니다. 갱신 시점에 따라 <strong>중고차보험료</strong>가 크게 달라질 수 있으므로, 정확한 갱신 날짜를 확인하여 유리한 조건을 선택하세요.</p>
-    </div>
-
-    <h3>2.2. 운전자 범위 설정: 1인 한정 vs. 가족 한정</h3>
-    <p>운전자의 범위를 1인 한정으로 설정하면 보험료가 가장 <strong>저렴하게</strong> 책정됩니다. 가족 한정이나 부부 한정으로 범위를 확대할수록 보험료는 상승합니다. 운전자 범위를 설정할 때 <strong>중고차 보험료 비교</strong>를 통해 각 옵션별 <strong>중고차 보험료 차이점</strong>을 확인해 보는 것이 중요합니다.</p>
-    <p>만약 가족 중 만 26세 이상의 운전자가 있다면, 그 운전자를 대표 계약자로 설정하고, 운전자 범위를 제한하는 것이 <strong>중고차 보험료 절약</strong>에 도움이 될 수 있습니다. 보험료 절감의 장점과 운전 편의성(다른 운전자 허용 여부)의 단점을 잘 비교하여 선택해야 합니다.</p>
-
-    <h2 id="section3">3. 중고차 자차보험 vs. 책임보험료 차이점 분석</h2>
-    
-    <p>자동차 보험은 크게 의무보험(책임보험)과 임의보험(종합보험)으로 나뉩니다. <strong>중고차 책임보험</strong>은 의무 가입 사항으로, 미가입 시 과태료가 부과됩니다. 반면 <strong>중고차 자차보험</strong>은 임의 가입으로, 본인 차량의 손해를 보상받기 위해 선택하는 담보입니다.</p>
-
-    <h3>3.1. 중고차 책임보험의 역할과 한계</h3>
-    <p><strong>중고차 책임보험</strong>은 사고 발생 시 타인의 신체(대인배상)와 재물(대물배상) 피해를 보상합니다. 최소한의 보장만을 제공하기 때문에, 사고로 인한 본인 차량 수리비나 운전자의 상해는 보상하지 않습니다. <strong>중고차 책임보험료</strong>는 비교적 저렴하지만, 이 한도 이상의 피해가 발생할 경우 운전자 본인이 모든 금액을 부담해야 합니다.</p>
-
-    <h3>3.2. 중고차 자차보험 가입의 필요성과 손해율</h3>
-    <p><strong>중고차 자차보험</strong>은 사고 시 본인 차량의 수리비를 보상해 줍니다. 특히 차량 가액이 높거나, 주차 중 접촉사고 등 다양한 위험에 대비하고 싶다면 <strong>중고차 자차보험</strong> 가입을 고려해야 합니다. 그러나 중고차는 연식이 오래될수록 차량 가액이 낮아지기 때문에, 보험 가입 비용(<strong>중고차 보험료</strong>) 대비 실제 보상받을 수 있는 금액이 적을 수 있습니다.</p>
-    <p><strong>중고차 보험료</strong>는 차량 모델의 손해율(사고 시 보험사가 지급하는 금액)에 따라 책정되는데, 특정 수입차나 부품 조달이 어려운 모델은 손해율이 높아 자차보험료가 높게 책정될 수 있습니다. <strong>중고차 자차보험</strong>을 가입할 때는 차량 가격과 <strong>중고차 보험료 견적</strong>을 비교하여 <strong>중고차 자차보험</strong>의 실익을 따져봐야 합니다.</p>
-    
-    <div class="warning-box">
-        <h4>중고차 자차보험 가입 시 주의사항</h4>
-        <p>차량 가액이 300~500만원 이하인 중고차의 경우, 자차보험료가 차량 가격의 10%를 초과할 수도 있습니다. 이런 경우 <strong>중고차 자차보험</strong>을 포기하고 '책임보험만' 가입하는 것이 <strong>중고차 보험료 절감</strong>에 유리할 수 있습니다.</p>
-    </div>
-    
-    <!-- 그래프 시뮬레이션: 중고차 보험료 연령대별 차이 -->
-    <h3 id="graph">중고차보험료 연령대별 예상 금액 시뮬레이션 (2026년 기준)</h3>
-    <figure class="graph-image">
-        <img src="https://via.placeholder.com/800x400.png?text=Used+Car+Insurance+Premium+by+Age+Group" alt="중고차보험료 연령대별 차이 그래프 시뮬레이션">
-        <figcaption>2026년 기준 20대, 30대, 40대의 중고차보험료 평균 비교 (가정: 운전 경력 3년, 1500cc 국산차, 무사고 기준)</figcaption>
-    </figure>
-    <p>위 그래프는 연령대별 <strong>중고차보험료 평균</strong>을 시뮬레이션한 것입니다. 만 26세 미만인 20대 초반의 <strong>중고차보험료 금액</strong>이 30~40대에 비해 훨씬 높게 책정되는 것을 확인할 수 있습니다. 나이가 들수록 보험료가 낮아지는 경향은 운전 경력 증가와 사고율 감소에 기인합니다.</p>
-
-    <h2 id="section4">4. 2026년 중고차보험료 절약 팁: 할인 특약 활용법</h2>
-    
-    <p><strong>중고차 보험료</strong>를 획기적으로 낮추는 방법은 바로 보험사에서 제공하는 다양한 <strong>할인 특약</strong>을 적극적으로 활용하는 것입니다. 2026년에는 특히 친환경 운전과 안전장치에 대한 할인율이 강화되었습니다.</p>
-
-    <h3>4.1. 주행거리 할인 특약 (마일리지 특약)</h3>
-    <p>운행 거리가 짧을수록 보험료를 할인해 주는 특약입니다. 중고차를 세컨드 카로 사용하거나, 대중교통 이용이 잦아 연간 주행 거리가 1만 km 미만이라면 반드시 <strong>마일리지 특약</strong>을 가입해야 합니다. <strong>중고차보험료 견적</strong>을 비교할 때 마일리지 특약 할인율도 함께 확인해야 <strong>중고차 보험료 저렴하게</strong> 가입할 수 있습니다.</p>
-    <p><strong><a href="https://www.fss.or.kr/" target="_blank">금융감독원</a></strong>에 따르면, 주행거리 특약은 가입자에게 가장 보편적인 할인 혜택을 제공하며, 연간 3천 km 이하 주행 시 최대 30% 내외의 할인이 가능합니다.</p>
-
-    <h3>4.2. 안전운전 할인 특약 (T맵/카카오내비 연동)</h3>
-    <p>스마트폰 내비게이션 앱(T맵, 카카오내비 등)과 연동하여 안전운전 점수를 측정하고, 일정 점수 이상(예: 60점 이상)인 운전자에게 보험료를 할인해 주는 특약입니다. 평소 안전 운전을 한다면 <strong>중고차 보험료</strong> 절약에 큰 도움이 됩니다. 이 특약은 <strong>중고차 보험 추천 순위</strong> 상위 보험사들이 적극적으로 제공하는 혜택입니다.</p>
-
-    <h3>4.3. 첨단 안전장치 장착 할인</h3>
-    <p>차선 이탈 경고 장치(LDWS), 전방 충돌 방지 장치(FCW) 등 첨단 안전장치가 장착된 차량은 보험료가 할인됩니다. 중고차 구매 시 이러한 안전장치 유무를 확인하는 것이 <strong>중고차보험료</strong> 절약의 팁입니다.</p>
-    <p><strong><a href="https://www.law.go.kr/법령/자동차관리법" target="_blank">자동차 관리법</a></strong>에 따라 차량의 안전장치 종류가 명확히 구분되어 있으므로, 차량 매매 시 해당 정보를 꼼꼼히 체크하세요.</p>
-
-    <h2 id="section5">5. 중고차보험료 비교견적: 주요 보험사 순위 및 추천</h2>
-    
-    <p><strong>중고차 보험료 비교</strong>는 <strong>중고차 보험 가입</strong> 시 가장 중요한 과정입니다. 각 보험사마다 <strong>중고차 보험료</strong> 산정 기준과 할인율이 다르기 때문에, A 보험사에서는 비쌌던 <strong>중고차보험료 견적</strong>이 B 보험사에서는 <strong>저렴하게</strong> 나올 수 있습니다. <strong>중고차 보험 추천 순위</strong>는 개인의 조건(나이, 경력, 차량)에 따라 달라지므로, 여러 보험사를 비교해야 합니다.</p>
-
-    <h3>5.1. 다이렉트 보험의 장점</h3>
-    <p><strong>중고차 보험료</strong>를 <strong>저렴하게</strong> 가입하는 가장 확실한 방법은 <strong>다이렉트 보험</strong>입니다. 보험 설계사를 통하지 않고 온라인으로 직접 가입하므로 수수료가 절감되어 <strong>중고차보험료 평균</strong>보다 약 15~20% 저렴합니다. 2026년에는 다이렉트 보험 시장이 더욱 활성화되어 <strong>중고차보험료 비교</strong>가 더욱 쉬워졌습니다.</p>
-
-    <h3>5.2. 보험사별 중고차 보험료 비교 테이블 (2026년 기준)</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>보험사</th>
-                <th>할인율 및 특약 특징</th>
-                <th>평가 (중고차 보험 추천)</th>
-                <th>주요 타겟 (중고차보험료 저렴한 곳)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>A보험사</strong></td>
-                <td>마일리지 특약 할인율 높음, 초보 운전자 할증 비교적 낮음.</td>
-                <td>★★★★☆ (가성비 우수)</td>
-                <td>주행 거리가 짧은 운전자, 초보 운전자</td>
-            </tr>
-            <tr>
-                <td><strong>B보험사</strong></td>
-                <td>첨단 안전장치 할인율 높음, 다이렉트 보험료 할인율 높음.</td>
-                <td>★★★☆☆ (첨단 기술 선호)</td>
-                <td>첨단 옵션 차량 소유자</td>
-            </tr>
-            <tr>
-                <td><strong>C보험사</strong></td>
-                <td>가족 한정 할인율 높음, 자녀 할인 특약 제공.</td>
-                <td>★★★★☆ (가족 단위 추천)</td>
-                <td>가족 운전자 보험 가입 희망자</td>
-            </tr>
-            <tr>
-                <td><strong>D보험사</strong></td>
-                <td>T맵 안전운전 점수 할인율 높음, 블랙박스 할인율 높음.</td>
-                <td>★★★☆☆ (안전 운전 선호)</td>
-                <td>안전 운전 습관 보유자</td>
-            </tr>
-        </tbody>
-    </table>
-    <p>위 표는 <strong>중고차 보험료 비교</strong>를 위한 참고 자료이며, 개인의 <strong>중고차 보험료 견적</strong>은 다를 수 있습니다. 반드시 <strong>중고차보험료 계산</strong> 서비스를 통해 정확한 금액을 확인해야 합니다.</p>
-
-    <h2 id="section6">6. 중고차 보험 가입 절차와 필수 서류</h2>
-
-    <p>중고차를 구매하고 <strong>중고차 보험 가입</strong>을 진행하는 과정은 신차와 약간의 차이가 있습니다. <strong>중고차보험료 견적</strong>을 미리 받은 후, 차량 인수 당일에 보험을 가입하고 관할 구청에 차량 등록을 완료해야 합니다.</p>
-
-    <h3>6.1. 중고차 이전 등록과 보험 가입의 관계</h3>
-    <p>중고차를 구매하면 차량 명의를 본인으로 이전하는 '이전 등록' 절차를 거칩니다. 이때 보험 가입이 필수입니다. <strong>중고차 보험 가입</strong>을 하지 않으면 이전 등록 자체가 불가능합니다. 따라서 <strong>중고차보험료 계산</strong>을 미리 해보고, 인수 당일 보험 효력이 발생하는 시점에 맞춰 가입을 완료해야 합니다.</p>
-    <p><strong><a href="https://www.car365.go.kr/" target="_blank">자동차민원 대국민포털(CAR365)</a></strong>을 통해 중고차의 사고 이력, 침수 여부 등 상세 정보를 확인한 후 <strong>중고차 보험 가입</strong>을 진행할 수 있습니다. 사고 이력이 있다면 <strong>중고차보험료</strong>가 상승할 수 있으므로, 구매 전 확인이 중요합니다.</p>
-
-    <h3>6.2. 중고차 보험료 갱신 절차</h3>
-    <p><strong>중고차 보험료 갱신</strong>은 만기일 30일 전부터 가능합니다. 갱신 시에는 1년간의 무사고 운전 경력, 주행거리, 운전자 범위 변경 등을 고려하여 <strong>중고차보험료 견적</strong>이 다시 산출됩니다. <strong>중고차 보험료 갱신</strong> 시에도 여러 보험사의 <strong>중고차 보험료 비교</strong>를 통해 가장 유리한 조건을 선택하는 것이 좋습니다.</p>
-
-    <!-- Interactive Section for Dwell Time -->
-    <h2 id="interactive">중고차보험료 예상 견적 시뮬레이터 (2026년 기준)</h2>
-    <div class="interactive-section">
-        <p>간단한 정보 입력으로 <strong>2026년 중고차보험료</strong> 예상 견적을 시뮬레이션 해보세요. 이는 정확한 <strong>중고차보험료 계산</strong>이 아닌, 일반적인 <strong>중고차보험료 평균</strong>을 기반으로 한 예상 금액입니다.</p>
-        <form id="insurance-simulator">
-            <label for="age">1. 운전자 나이:</label>
-            <select id="age" name="age">
-                <option value="20s_early">20대 초반 (만 26세 미만)</option>
-                <option value="20s_late">20대 후반 (만 26세 이상)</option>
-                <option value="30s">30대</option>
-                <option value="40s">40대</option>
-                <option value="50s+">50대 이상</option>
-            </select>
-
-            <label for="experience">2. 운전 경력:</label>
-            <select id="experience" name="experience">
-                <option value="less_than_1yr">1년 미만 (초보)</option>
-                <option value="1_to_3yr">1~3년</option>
-                <option value="3_to_5yr">3~5년</option>
-                <option value="over_5yr">5년 이상</option>
-            </select>
-
-            <label for="car_model">3. 차량 모델 및 연식:</label>
-            <select id="car_model" name="car_model">
-                <option value="light_car">경차 (예: 스파크, 모닝)</option>
-                <option value="small_sedan">준중형/중형 국산차 (예: 아반떼, K5, 쏘나타)</option>
-                <option value="suv">국산 SUV (예: 쏘렌토, 싼타페)</option>
-                <option value="imported_car">수입차 (예: BMW, 벤츠)</option>
-            </select>
-
-            <label for="coverage">4. 보험 가입 범위:</label>
-            <select id="coverage" name="coverage">
-                <option value="liability_only">책임보험만</option>
-                <option value="comprehensive">종합보험 (자차 포함)</option>
-            </select>
-
-            <button type="button" onclick="calculateQuote()">예상 견적 확인하기</button>
-        </form>
-        <div id="result-display" style="margin-top: 20px; font-weight: bold; color: #007bff; font-size: 18px;"></div>
-    </div>
     <script>
-        function calculateQuote() {
-            const age = document.getElementById('age').value;
-            const experience = document.getElementById('experience').value;
-            const carModel = document.getElementById('car_model').value;
-            const coverage = document.getElementById('coverage').value;
-            let basePremium = 0;
+        // JS Logic (keep existing functionality for forms and data submission)
 
-            // Base calculation logic based on typical risk factors
-            if (carModel === 'light_car') basePremium = 400000;
-            else if (carModel === 'small_sedan') basePremium = 550000;
-            else if (carModel === 'suv') basePremium = 650000;
-            else if (carModel === 'imported_car') basePremium = 900000;
+        $(document).ready(function () {
+            // 팝업 열고닫기 - using jQuery show/hide
+            $(".btnViewPolicy, .showPolicyWin, label[for='agree_chk']").on("click", function (e) {
+                e.preventDefault(); // Prevent default behavior
+                $("#privacyPopup").show();
+            });
 
-            if (age === '20s_early') basePremium *= 1.8;
-            else if (age === '20s_late') basePremium *= 1.2;
-            else if (age === '30s') basePremium *= 1.0;
-            else if (age === '40s') basePremium *= 0.9;
-            else if (age === '50s+') basePremium *= 0.85;
+            $("#privacyPopup .btnClosePopup, #privacyPopup .btnConfirm").on("click", function () {
+                $("#privacyPopup").hide();
+            });
 
-            if (experience === 'less_than_1yr') basePremium *= 1.5;
-            else if (experience === '1_to_3yr') basePremium *= 1.2;
+            // 체크설정
+            $("#privacyPopup .checkAll").on("click", function () {
+                if ($(this).prop("checked") == true) {
+                    $("#privacyPopup .agreeContWrap input[type=checkbox]").prop("checked", true);
+                } else {
+                    $("#privacyPopup .agreeContWrap input[type=checkbox]").prop("checked", false);
+                }
 
-            if (coverage === 'liability_only') basePremium *= 0.6;
+                setParentAgree();
+            });
 
-            let finalPremium = Math.round(basePremium / 10000) * 10000; // Round to nearest 10,000 won
-            document.getElementById('result-display').innerText = `예상 중고차보험료 금액: ${finalPremium.toLocaleString()}원 (VAT 제외, 특약 미반영)`;
+            $("#privacyPopup .agreeContWrap input[type=checkbox]").on("click", function () {
+                var allChk = true;
+                $("#privacyPopup .agreeContWrap input[type=checkbox]").each(function () {
+                    if ($(this).prop("checked") == false) {
+                        allChk = false;
+                    }
+                });
+
+                if (allChk == false) {
+                    $("#privacyPopup .checkAll").prop("checked", false);
+                } else {
+                    $("#privacyPopup .checkAll").prop("checked", true);
+                }
+
+                setParentAgree();
+            });
+
+            // Allow checkbox to be checked
+            $(".checkMain").on("click", function (e) {
+                e.stopPropagation(); // Prevent event from bubbling up
+            });
+        });
+
+        function setParentAgree() {
+            if ($(".agreeChk1").prop("checked") == true && $(".agreeChk2").prop("checked") == true) {
+                $(".checkMain").prop("checked", true);
+            } else {
+                $(".checkMain").prop("checked", false);
+            }
+        }
+
+        document.addEventListener('scroll', function () {
+            const scrollPosition = window.scrollY || window.pageYOffset;
+            const sideForms = document.querySelectorAll('.sideForm');
+
+            // Adjust scroll threshold for sideForm visibility based on new content length
+            const scrollThreshold = 100; // Keep side form visible near top
+
+            if (scrollPosition > scrollThreshold) {
+                sideForms.forEach(function (sideForm) {
+                    sideForm.classList.remove('on');
+                });
+            } else {
+                sideForms.forEach(function (sideForm) {
+                    sideForm.classList.add('on');
+                });
+            }
+        });
+
+        //submit logic from original code (adapted for new form structure)
+        $(document).ready(function () {
+            $("input[name=mphone]").keyup(function (event) {
+                var inputVal = $(this).val();
+                $(this).val(inputVal.replace(/[^0-9]/gi, ''));
+            });
+
+            $("#btnSubmitS01")
+                .off("click.S01")
+                .on("click.S01", function () {
+                    const frmS01Name = $("#frmS01Name").val();
+                    const phoneMHead = $(".phoneHeadSelector_m").val(); // 앞자리 선택값(010, 011 등)
+                    const phoneMNumber = $("#frmS01Mphone").val(); // 나머지 번호
+                    const frmS01Mphone = phoneMHead + phoneMNumber; // 전체 전화번호 조합
+                    const hasChecked = $("#privacyAgree3").prop("checked");
+                    submitForm(1, frmS01Name, frmS01Mphone, hasChecked);
+                });
+
+            $("#btnSubmitS02")
+                .off("click.S02")
+                .on("click.S02", function () {
+                    const frmS02Name = $("#frmS02Name").val();
+                    const phoneHead = $(".phoneHeadSelector").val(); // 앞자리 선택값(010, 011 등)
+                    const phoneNumber = $("#frmS02Mphone").val(); // 나머지 번호
+                    const frmS02Mphone = phoneHead + phoneNumber; // 전체 전화번호 조합
+                    const hasChecked = $("#privacyAgree2").prop("checked");
+                    submitForm(2, frmS02Name, frmS02Mphone, hasChecked);
+                });
+
+            $("#btnSubmitS03")
+                .off("click.S03")
+                .on("click.S03", function () {
+                    const frmS03Name = $("#frmS03Name").val();
+                    const frmS03Mphone = $("#frmS03Mphone").val();
+
+                    const hasChecked = $("#agree_chk").prop("checked");
+                    submitForm(3, frmS03Name, frmS03Mphone, hasChecked);
+                });
+
+            //팝업 열고닫기
+            $(".btnViewPolicy, .showPolicyWin").on("click", function () {
+                $("#privacyPopup").show();
+            });
+            $("#privacyPopup .btnClosePopup, #privacyPopup .btnConfirm").on("click", function () {
+                $("#privacyPopup").hide();
+            });
+        });
+
+        const paramReferer = '';
+        const paramCampUid = '';
+        const paramUtmMedium = '';
+
+        //기본 데이터 로드
+        function loadData() {
+            const async = $.Deferred();
+            $.ajax({
+                url: 'https://db.siwoomarketing.com/api/index.php?ctrl=landing.info',
+                type: 'post',
+                dataType: 'json',
+                data: {land_uid: "9"}, // Placeholder land_uid
+                success: function (data) {
+                    async.resolve(data);
+                },
+                error: function (err) {
+                    async.reject(err);
+                },
+            });
+
+            return async.promise();
+        }
+
+        async function submitForm(formType = 1, userName, userPhone, isChecked = false) {
+            let loadInitData;
+            let param = {};
+
+            let sms_title;
+            let sms_msg;
+            let sms_broadcast;
+            let sms_use_customer;
+            let sms_use_broadcast;
+            let user_id;
+            let land_uid;
+            try {
+                loadInitData = await loadData();
+                sms_title = loadInitData["extra"]["config"]["sms_title"];
+                sms_msg = loadInitData["extra"]["config"]["sms_msg"];
+                sms_broadcast = loadInitData["extra"]["config"]["sms_broadcast"];
+                sms_use_customer = loadInitData["extra"]["config"]["sms_use_customer"];
+                sms_use_broadcast = loadInitData["extra"]["config"]["sms_use_broadcast"];
+                user_id = loadInitData["extra"]["config"]["user_id"];
+                land_uid = loadInitData["extra"]["config"]["land_uid"];
+            } catch (e) {
+                console.log(e);
+                alert("폼 제출에 실패했습니다. 잠시 후 다시 시도해주세요.");
+                return;
+            }
+
+            if (!isChecked) {
+                alert("약관 동의 후 가능합니다.");
+                const myModal = new bootstrap.Modal(document.getElementById('privacyPopup'));
+                myModal.show();
+                return;
+            }
+
+            // 이벤트 SMS 수신 동의 처리
+            let eventSmsFlag = $("#privacyPopup .agreeChk3").prop("checked") ? "Y" : "N";
+            $("input[name=rcv_event_sms]").val(eventSmsFlag);
+
+            // 폼 데이터 직렬
+            let resultData;
+
+            // 성공 처리 방식 설정
+            let successAction = {
+                url: "/success/complete.php",
+                showAlert: formType > 0, // 폼2,3만 알림 표시
+                reload: formType > 0     // 폼2,3만 새로고침
+            };
+
+            param["inqType"] = 2;
+            param["smsTitle"] = sms_title;
+            param["smsMsg"] = sms_msg;
+            param["msgType"] = "mms";
+            param["smsBroadcastNumber"] = sms_broadcast;
+            param["smsSendYN"] = sms_use_customer;
+            param["smsSendBroadcastYN"] = sms_use_broadcast;
+            param["user_id"] = user_id;
+            param["land_uid"] = land_uid;
+
+            //TODO 이벤트 태그
+            param["rcv_event_sms"] = "Y";
+            param["content"] = "";
+            param["returnUrl"] = "";
+            param["refererUrl"] = paramReferer;
+            param["campUid"] = paramCampUid;
+            param["utmMedium"] = paramUtmMedium;
+            param["showCompleteAlertMsg"] = "Y";
+            param["name"] = userName;
+            param["mphone"] = userPhone;
+
+            try {
+                resultData = await submitFormProc(param);
+                if (resultData["returnCode"]) {
+                    if (successAction.showAlert) {
+                        alert("신청이 완료되었습니다.");
+                    }
+                    if (successAction.reload) {
+                        document.location.reload();
+                    } else {
+                        document.location.href = successAction.url;
+                    }
+                } else {
+                    alert(resultData["returnMsg"]);
+                }
+            } catch (e) {
+                alert("서버 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
+                return;
+            }
+
+            return false;
+        }
+
+        function submitFormProc(param) {
+            const async = $.Deferred();
+            // AJAX 요청
+            $.ajax({
+                url: "https://db.siwoomarketing.com/api/index.php?ctrl=inq.regist",
+                type: "post",
+                dataType: "json",
+                data: param
+                , success: function (data) {
+                    async.resolve(data);
+                },
+                error: function (err) {
+                    async.reject(err);
+                }
+            });
+            return async.promise();
+        }
+
+        // Real-time list rolling function (if needed) - keep placeholder if original code has it, but focus on content now.
+        function rollRealTimeList() {
+            // Placeholder for real-time list rolling logic
         }
     </script>
-
-    <h2 id="section7">7. 중고차 보험료 Q&A: 자주 묻는 질문</h2>
-
-    <h3>Q1. 중고차 보험료를 <strong>저렴하게</strong> 가입하려면 언제 <strong>중고차 보험 가입</strong>을 해야 하나요?</h3>
-    <p>중고차는 신차와 달리 <strong>중고차보험료</strong>를 즉시 가입해야 합니다. <strong>중고차 보험료 갱신</strong> 시기라면 만기일 전에 미리 비교견적을 받아보는 것이 좋습니다. 특히 보험료가 할인되는 특정 시기(예: 만 26세 도래 시)를 활용하여 갱신하는 팁이 있습니다.</p>
-
-    <h3>Q2. <strong>중고차 보험료 평균</strong>은 얼마인가요?</h3>
-    <p><strong>중고차 보험료 평균</strong>은 운전자의 나이, 경력, 차량 모델, 가입 범위 등에 따라 천차만별입니다. <strong>중고차 보험료</strong>가 40만원대에서 150만원대 이상까지 광범위하게 형성됩니다. 따라서 <strong>중고차 보험료 계산</strong>기를 통해 개인별 <strong>중고차 보험료 견적</strong>을 확인해야 정확한 <strong>중고차 보험료 금액</strong>을 알 수 있습니다.</p>
-
-    <h3>Q3. <strong>중고차 자차보험</strong> 가입 시 자기부담금은 무엇인가요?</h3>
-    <p>자기부담금은 사고가 발생했을 때 운전자가 일정 비율(예: 20%) 또는 일정 금액(예: 최소 20만원)을 부담하는 제도입니다. 자기부담금 비율을 높게 설정할수록 <strong>중고차보험료</strong>는 낮아집니다. <strong>중고차보험료 절약</strong>을 위해 자기부담금을 높게 설정하는 경우도 많습니다.</p>
-
-    <h3>Q4. <strong>중고차 책임보험</strong>만 가입할 경우의 <strong>단점</strong>은 무엇인가요?</h3>
-    <p><strong>중고차 책임보험</strong>만 가입하면 본인 차량의 수리비(<strong>중고차 자차보험</strong> 미가입), 본인 상해 치료비(자손/자상 특약 미가입) 등을 전혀 보상받을 수 없습니다. 작은 사고라도 큰 경제적 부담으로 이어질 수 있으므로, <strong>중고차보험료 저렴하게</strong> 가입하려다 더 큰 손해를 볼 수 있습니다.</p>
-
-    <h3>Q5. <strong>중고차 보험료 갱신</strong> 시 <strong>중고차 보험 순위</strong>는 어떻게 활용해야 하나요?</h3>
-    <p><strong>중고차 보험 순위</strong>는 일반적인 만족도나 규모 순위일 뿐, 개인에게 가장 <strong>중고차보험료가 저렴한 곳</strong>을 의미하지 않습니다. <strong>중고차 보험료 비교</strong> 사이트를 통해 개인 조건별 <strong>중고차 보험 견적</strong>을 직접 받아보고, <strong>중고차 보험 추천</strong>을 참고하여 최종 결정하는 것이 현명합니다.</p>
-
-    <h3>Q6. <strong>중고차 보험료</strong>를 <strong>저렴하게</strong> 가입하는 <strong>장점</strong>과 <strong>단점</strong>은 무엇인가요?</h3>
-    <p><strong>장점:</strong> 매년 납입하는 보험료 부담을 줄일 수 있습니다. (<strong>중고차보험료 금액</strong> 절감) <strong>단점:</strong> 보험료를 줄이기 위해 보장 범위를 축소하면 사고 시 충분한 보상을 받지 못할 수 있습니다. (보장 공백 발생) 따라서 <strong>중고차 보험료 절감</strong>과 보장 범위 사이의 균형을 찾아야 합니다.</p>
-
-    <h3>Q7. <strong>중고차 보험 추천</strong> 시 <strong>중고차 보험료 차이점</strong>을 비교하는 기준은 무엇인가요?</h3>
-    <p><strong>중고차 보험료 비교</strong> 시 단순히 <strong>중고차보험료 견적</strong> 총액만 비교하지 말고, <strong>중고차 자차보험</strong>의 가입 조건, 특약 할인율, 긴급 출동 서비스의 질, 사고 시 보상 처리 속도 등을 종합적으로 비교해야 합니다.</p>
-
-    <div class="tip-box">
-        <h4>중고차보험료 최적화를 위한 최종 점검 팁</h4>
-        <p>1. <strong>만 26세 기준</strong> 운전자라면 <strong>중고차 보험료</strong> 할인 시점을 확인하세요.<br>2. <strong>주행거리 특약</strong>을 통해 <strong>중고차보험료 저렴하게</strong> 가입할 수 있는지 확인하세요.<br>3. <strong>중고차 자차보험</strong> 가입 여부를 차량 가액과 <strong>중고차 보험료 견적</strong>을 비교하여 결정하세요.<br>4. <strong>중고차 보험료 비교</strong>는 최소 3곳 이상의 <strong>중고차 보험사 순위</strong>를 참고하여 진행하세요.<br>5. <strong>중고차 보험 가입</strong> 시 <strong>중고차 보험료</strong>뿐 아니라 사고 처리의 <strong>장점과 단점</strong>까지 고려하여 <strong>중고차 보험 추천</strong>을 받으세요.</p>
-    </div>
-
-    <p>본문 내용 중 <strong>중고차보험료</strong> 관련 정보는 2026년 보험 시장 동향과 보험사별 약관에 따라 변동될 수 있습니다. <strong>중고차 보험 가입</strong> 전 반드시 해당 보험사의 약관을 확인하시기 바랍니다.</p>
-
 
 
 	
@@ -607,4 +1151,5 @@
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" data-bootloader-hash="qgmbN7Z" async="1" crossorigin="anonymous" data-p=":74" data-btmanifest="1027280358_main" data-c="1"></script>
 </body>
 </html>
+
 
