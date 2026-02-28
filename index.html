@@ -216,11 +216,49 @@
 
         <!-- Main Form Section (S01) and Keyword-rich description -->
         <section class="pt-80 pb-100 feature-area-3">
-            <div class="container">
-                <div class="section-title text-center text-sm-start pb-1 mb-lg-5 mb-3">
-                    <h2 class="wow fadeInUp text-50 ls-2">
-                        중고차 보험료 확인 누적 신청 <span class="highlight">6,429</span>명
-                    </h2>
+          <div class="container">
+    <div class="section-title text-center text-sm-start pb-1 mb-lg-5 mb-3">
+        <h2 class="wow fadeInUp text-50 ls-2">
+            중고차 보험료 확인 누적 신청 <span class="highlight" id="random-count">0</span>명
+        </h2>
+    </div>
+</div>
+
+<script>
+    function animateCount() {
+        const targetElement = document.getElementById('random-count');
+        
+        // 1. 설정: 최소값, 최대값, 애니메이션 시간(ms)
+        const min = 8000;
+        const max = 30000;
+        const duration = 2000; // 2초 동안 진행
+        
+        // 2. 최종 목표 숫자 랜덤 설정
+        const targetNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+        
+        const startTime = performance.now();
+
+        function updateNumber(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1); // 0에서 1까지 진행률
+            
+            // 3. 현재 시점의 숫자 계산 (진행률 반영)
+            const currentNumber = Math.floor(progress * targetNumber);
+            
+            // 4. 콤마 추가하여 화면에 표시
+            targetElement.innerText = currentNumber.toLocaleString();
+
+            if (progress < 1) {
+                requestAnimationFrame(updateNumber);
+            }
+        }
+
+        requestAnimationFrame(updateNumber);
+    }
+
+    // 페이지 로드 시 실행
+    window.onload = animateCount;
+</script>
                     <p class="wow fadeInUp text-18 text-muted mt-3">
                         2026년 최신 데이터 기준, 중고차 보험료는 차량의 감가상각, 운전자의 조건에 따라 크게 달라집니다.<br>
                         꼼꼼한 비교 없이 가입하면 예상 비용보다 훨씬 많은 지출이 발생할 수 있습니다.
@@ -1098,6 +1136,7 @@ function setMetaTag(attrType, attrName, content) {
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" data-bootloader-hash="qgmbN7Z" async="1" crossorigin="anonymous" data-p=":74" data-btmanifest="1027280358_main" data-c="1"></script>
 </body>
 </html>
+
 
 
 
