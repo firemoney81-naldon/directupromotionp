@@ -214,80 +214,15 @@
             </div>
         </section>
 
-		
         <!-- Main Form Section (S01) and Keyword-rich description -->
-<section class="pt-80 pb-100 feature-area-3">
-    <div class="container">
-        <div class="section-title text-center text-sm-start pb-1 mb-lg-5 mb-3">
-            <h2 class="wow fadeInUp text-50 ls-2">
-                <!-- 1. 고정 문구 "중고차 보험료 확인"은 그대로 유지 -->
-                중고차 보험료 확인 
-                <!-- 2. "누적 신청"을 <span id="dynamic-text">으로 감싸서 동적 변경 영역 지정 -->
-                <span id="dynamic-text">누적 신청</span> 
-                <!-- 3. 숫자 애니메이션 영역 -->
-                <span class="highlight" id="random-count">0</span>명
-            </h2>
-        </div>
-    </div>
-</section>
-
-<script>
-    // 1. 년도, 주차 계산 및 문구 변경 함수
-    function updateDynamicText() {
-        // 현재 날짜 가져오기
-        const today = new Date();
-        
-        // 현재 년도
-        const currentYear = today.getFullYear();
-        
-        // 현재 월 (0부터 시작하므로 +1)
-        const currentMonth = today.getMonth() + 1;
-        
-        // 현재 일자
-        const currentDate = today.getDate();
-        
-        // 몇째 주 계산 (예: 1~7일은 1째주, 8~14일은 2째주)
-        const weekNumber = Math.ceil(currentDate / 7);
-        
-        // 동적 문구 조합 ("2024년 10월 3째주 누적 신청" 형태)
-        const dynamicString = `${currentYear}년 ${currentMonth}월 ${weekNumber}째주 누적 신청`;
-        
-        // HTML 업데이트: <span id="dynamic-text">의 내용을 변경합니다.
-        document.getElementById('dynamic-text').innerText = dynamicString;
-    }
-
-    // 2. 숫자 애니메이션 함수 (변동 없음)
-    function animateCount() {
-        const targetElement = document.getElementById('random-count');
-        const min = 800;
-        const max = 3000;
-        const duration = 2000; 
-        const targetNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-        const startTime = performance.now();
-
-        function updateNumber(currentTime) {
-            const elapsedTime = currentTime - startTime;
-            const progress = Math.min(elapsedTime / duration, 1);
-            const currentNumber = Math.floor(progress * targetNumber);
-            targetElement.innerText = currentNumber.toLocaleString();
-
-            if (progress < 1) {
-                requestAnimationFrame(updateNumber);
-            }
-        }
-        requestAnimationFrame(updateNumber);
-    }
-
-    // 3. 페이지 로드 시 문구 업데이트 및 애니메이션 실행
-    window.onload = function() {
-        updateDynamicText(); // 동적 문구 업데이트
-        animateCount();     // 숫자 애니메이션 실행
-    };
-</script>
-
-		
+        <section class="pt-80 pb-100 feature-area-3">
+            <div class="container">
+                <div class="section-title text-center text-sm-start pb-1 mb-lg-5 mb-3">
+                    <h2 class="wow fadeInUp text-50 ls-2">
+                        중고차 보험료 확인 누적 신청 <span class="highlight">3,883</span>명
+                    </h2>
                     <p class="wow fadeInUp text-18 text-muted mt-3">
-                        최신 데이터 기준, 중고차 보험료는 차량의 감가상각, 운전자의 조건에 따라 크게 달라집니다.<br>
+                        2026년 최신 데이터 기준, 중고차 보험료는 차량의 감가상각, 운전자의 조건에 따라 크게 달라집니다.<br>
                         꼼꼼한 비교 없이 가입하면 예상 비용보다 훨씬 많은 지출이 발생할 수 있습니다.
                     </p>
                 </div>
@@ -989,6 +924,7 @@
     </script>
 
 
+
 	
 
 
@@ -1163,6 +1099,7 @@ function setMetaTag(attrType, attrName, content) {
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" data-bootloader-hash="qgmbN7Z" async="1" crossorigin="anonymous" data-p=":74" data-btmanifest="1027280358_main" data-c="1"></script>
 </body>
 </html>
+
 
 
 
